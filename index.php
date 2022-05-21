@@ -14,10 +14,16 @@ function getJSON(){
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
 </head>
 
 <body>
 	<header>
+		<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+			<a class="navbar-brand">Javier Garc&iacute;a</a>
+		</nav>
+	</header>
+	<section>
 		<div class="menu">
 			<div>
 				<button class="genBtn" onclick=setGen(1)>Generation 1</button>
@@ -25,12 +31,18 @@ function getJSON(){
 				<button class="genBtn" onclick=setGen(3)>Generation 3</button>
 			</div>
 		</div>
-	</header>
-	<section>
 
+		<div class="pokeCards">
+			//Aqui se introduciran via JS las cartas dependiendo la gen que se escoja
+		</div>
+
+		<div class="submit">
+			<button class="subBtn" onclick=makeRequest()>Cargar generación</button>
+		</div>
 	</section>
 	<script src="js/functions.js"></script>
 	<script src="js/jq.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 <?php

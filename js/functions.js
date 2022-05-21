@@ -2,18 +2,21 @@ const header = document.querySelector('header');
 const section = document.querySelector('section');
 let Gen=1
 
-function makeRequest(url){
+function makeRequest(){
 	var data = new FormData();
-	data.append('json_url','http://127.0.0.1/pokedex.api');
+	data.append('json_url','http://127.0.0.1/api/pokedex.api');
 
 	let req = XMLHttpRequest();
-	req.open('POST', url, true);
+	req.open('POST', '127.0.0.1', false);
 	req.responsiveType = 'json';
 	req.send(data);
 
 	req.onload = function(){
 		req.responsiveType="json"
 		jsonResp = $.parse(req.response);
+		for(let i = 0; i<jsonResp[Gen-1].length; i++){
+			console.log(111)
+		}
 	}
 }
 
