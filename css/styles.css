@@ -1,0 +1,14 @@
+.menu{
+	text-align: center;
+	position: relative;
+	flex: auto;
+}
+.genBtn{
+	flex: auto;
+	padding: 1%;
+	background-color: transparent;
+	border-radius: 0.7em;
+}
+.genBtn:hover{
+	background-color: aquamarine;
+}
