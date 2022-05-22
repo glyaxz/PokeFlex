@@ -37,7 +37,7 @@ function getJSON(){
 		</div>
 
 		<div class="submit">
-			<button class="subBtn" onclick=makeRequest()>Cargar generación</button>
+			<button class="subBtn">Cargar generación</button>
 		</div>
 	</section>
 	<script src="js/functions.js"></script>
