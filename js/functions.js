@@ -5,7 +5,7 @@ let Gen=1
 // var data = new FormData();
 // data.append('json_url','http://127.0.0.1/api/pokedex.api');
 
-const req = XMLHttpRequest();
+const req = new XMLHttpRequest();
 req.open('GET', 'localhost/api/pokedex.json', false);
 req.responsiveType = 'json';
 req.send();
