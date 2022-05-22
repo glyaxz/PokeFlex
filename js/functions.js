@@ -28,25 +28,28 @@ function loadGen(generation){
 
   	for (var i = 0; i < pokedex.length; i++) {
 		const myArticle = document.createElement('article');
-		const myH2 = document.createElement('h2');
 		const myPara1 = document.createElement('p');
+		const myImg = document.createElement('img');
 		const myPara2 = document.createElement('p');
 		const myPara3 = document.createElement('p');
 		const myPara4 = document.createElement('p');
-		const myList = document.createElement('ul');
 
-		myH2.textContent = pokedex[i].name;
+		myArticle.classList = 'pokecard'
 		myPara1.textContent = 'Nombre: ' + pokedex[i].name;
 		myPara2.textContent = 'Tipo: ' + pokedex[i].type;
 		myPara3.textContent = 'Nivel inicial:' + pokedex[i].initial_level;
 		myPara4.textContent = 'Fuerte contra:' + pokedes[i].strong_vs;
+		myImg.src = '/img/'+pokedex[i].name+'.png';
+		myImg.width = 200;
+
 
 
 		myArticle.appendChild(myH2);
 		myArticle.appendChild(myPara1);
 		myArticle.appendChild(myPara2);
 		myArticle.appendChild(myPara3);
-		myArticle.appendChild(myList);
+		myArticle.appendChild(myPara4);
+		myArticle.appendChild(myImg);
 
 		section.appendChild(myArticle);
   	}
