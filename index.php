@@ -36,9 +36,6 @@ function getJSON(){
 			<!-- Aqui se introduciran via JS las cartas dependiendo la gen que se escoja -->
 		</div>
 
-		<div class="submit">
-			<button class="subBtn">Cargar generación</button>
-		</div>
 	</section>
 	<script src="js/functions.js"></script>
 	<script src="js/jq.js"></script>
