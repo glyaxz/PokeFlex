@@ -24,7 +24,7 @@ function setGen(setGen){
 function loadGen(generation){
 	$('pokeCards').empty();
 
-	const pokedex = jsonObj['gen'+generation];
+	const pokedex = jsonResp['gen'+generation];
 
   	for (var i = 0; i < pokedex.length; i++) {
 		const myArticle = document.createElement('article');
