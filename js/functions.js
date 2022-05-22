@@ -1,6 +1,7 @@
 const header = document.querySelector('header');
 const section = document.getElementById('pokeCards');
 let Gen=1
+let jsonResp
 
 // var data = new FormData();
 // data.append('json_url','http://127.0.0.1/api/pokedex.api');
@@ -11,7 +12,7 @@ req.responsiveType = 'json';
 req.send();
 
 req.onload = function(){
-	let jsonResp = req.response;
+	jsonResp = req.response;
 
 }
 
