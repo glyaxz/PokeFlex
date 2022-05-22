@@ -10,13 +10,11 @@ req.open('POST', '127.0.0.1', false);
 req.responsiveType = 'json';
 req.send(data);
 
-function makeRequest(){
-	req.onload = function(){
-		req.responsiveType="json"
-		jsonResp = $.parse(req.response);
-		for(let i = 0; i<jsonResp[Gen-1].length; i++){
-			console.log(111)
-		}
+req.onload = function(){
+	req.responsiveType="json"
+	jsonResp = $.parse(req.response);
+	for(let i = 0; i<jsonResp[Gen-1].length; i++){
+		console.log(111)
 	}
 }
 
