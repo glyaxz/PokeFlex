@@ -33,7 +33,7 @@ function getJSON(){
 		</div>
 
 		<div class="pokeCards">
-			//Aqui se introduciran via JS las cartas dependiendo la gen que se escoja
+			<!-- Aqui se introduciran via JS las cartas dependiendo la gen que se escoja -->
 		</div>
 
 		<div class="submit">
