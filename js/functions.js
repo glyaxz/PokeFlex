@@ -3,9 +3,6 @@ const section = document.getElementById('pokeCards');
 let Gen=1
 let jsonResp
 
-// var data = new FormData();
-// data.append('json_url','http://127.0.0.1/api/pokedex.api');
-
 const req = new XMLHttpRequest();
 req.open('GET', '/api/pokedex.json', false);
 req.responsiveType = 'json';
@@ -20,7 +17,7 @@ function setGen(setGen){
 loadGen(Gen,jsonResp)
 
 function loadGen(generation,json){
-
+	clearCards();
 	const pokedex = JSON.parse(json);
 
   	for (var i = 1; i < 5; i++) {
@@ -41,20 +38,16 @@ function loadGen(generation,json){
 		myDiv.id = 'card'+i;
 		myPara1.textContent = 'Nombre: ' + pokedex['gen'+generation][i].name;
 		myPara2.textContent = 'Tipo: ' + pokedex['gen'+generation][i].type;
-		myPara3.textContent = 'Nivel inicial:' + pokedex['gen'+generation][i].initial_level;
-		myPara4.textContent = 'Fuerte contra:' + pokedex['gen'+generation][i].strong_vs;
+		myPara3.textContent = 'Nivel inicial: ' + pokedex['gen'+generation][i].initial_level;
+		myPara4.textContent = 'Fuerte contra: ' + pokedex['gen'+generation][i].strong_vs;
 		myImg.src = '/img/'+pokedex['gen'+generation][i].name+'.png';
 		myImg.width = 50;
 
 		document.getElementById('pokeCards').appendChild(myDiv)
-		
-  	}
-
-
-
+	}
 
 }
 
-// function clearCards(){
-// 	section.removeChild()
-// }
+function clearCards(){
+	section.innerHTML = "";
+}

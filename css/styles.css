@@ -13,12 +13,55 @@
 	background-color: aquamarine;
 }
 .pokecard{
-	border: 2px;
-	padding: 5%;
-	border-radius: 2px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
 	background-color: transparent;
+	padding: auto;
+	padding-top: 5%;
 }
+.pokecard-individual{
+	position: relative;
+	padding-left: 5%;
+	padding-top: 5%;
+	border: 2px;
+	border-color: black;
+	border-style: solid;
+	border-radius: 5%;
+	width: 90%;
+	block-size: auto;
+}
+.pokecard-individual img{
+	justify-content: center;
+}
+
 .pokecard-individual:hover{
 	background-color: lightblue;
 }
+@media (min-width: 500px) {
+	.pokecard-individual{
+		width: 40%;
+	}
+}
+@media (min-width: 756px) {
+	.pokecard-individual{
+		width: 26%;
+		
+	}
+}
+.cabecera{
+	text-align: center;
+	margin: 0 auto;
+	padding: auto;
+	padding-top: 5%;
+	padding-bottom: 2%;
+}
+.cabecera h1,h3{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
 

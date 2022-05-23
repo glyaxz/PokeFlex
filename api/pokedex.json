@@ -1,52 +1,52 @@
 {"gen1":{
     "1":{
-      "name":"squirtle",
-      "type":"agua",
+      "name":"Squirtle",
+      "type":"Agua",
       "initial_level":"5",
-      "strong_vs":"fire"
+      "strong_vs":"Fuego"
       },
       "2":{
-      "name":"charmander",
-      "type":"fire",
+      "name":"Charmander",
+      "type":"Fuego",
       "initial_level":"5",
-      "strong_vs":"grass"
+      "strong_vs":"Planta"
       },
       "3":{
-      "name":"bulbasaur",
-      "type":"grass",
+      "name":"Bulbasaur",
+      "type":"Planta",
       "initial_level":"5",
-      "strong_vs":"water"
+      "strong_vs":"Agua"
       },
       "4":{
-      "name":"pikachu",
-      "type":"electric",
+      "name":"Pikachu",
+      "type":"Electrico",
       "initial_level":"5",
-      "strong_vs":"water"
+      "strong_vs":"Agua"
       }
     },"gen2":{
       "1":{
-      "name":"totodile",
-      "type":"water",
+      "name":"Totodile",
+      "type":"Agua",
       "initial_level":"5",
-      "strong_vs":"fire"
+      "strong_vs":"Fuego"
       },
       "2":{
-      "name":"chikorita",
-      "type":"grass",
+      "name":"Chikorita",
+      "type":"Planta",
       "initial_level":"5",
-      "strong_vs":"water"
+      "strong_vs":"Agua"
       },
       "3":{
-      "name":"cyndaquil",
-      "type":"fire",
+      "name":"Cyndaquil",
+      "type":"Fuego",
       "initial_level":"5",
-      "strong_vs":"grass"
+      "strong_vs":"Planta"
       },
       "4":{
-      "name":"hoothoot",
-      "type":"normal",
+      "name":"Hoothoot",
+      "type":"Normal",
       "initial_level":"2",
-      "strong_vs":"none"
+      "strong_vs":"Nada"
       }
     },"gen3":{
     "":""

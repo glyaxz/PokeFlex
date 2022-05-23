@@ -15,6 +15,7 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="icon" href="favicon.png" type="image/png">
 </head>
 
 <body>
@@ -23,6 +24,17 @@
 			<a class="navbar-brand">Javier Garc&iacute;a</a>
 		</nav>
 	</header>
+
+	<div class="cabecera"> 
+		<h1>
+			Pokédex
+		</h1>
+		<br>
+		<h4>
+			Por Javier Garc&iacute;a
+		</h4>
+	</div>
+
 	<section>
 		<div class="menu">
 			<div>
