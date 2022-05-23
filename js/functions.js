@@ -60,7 +60,7 @@ function OpenModal(id) {
 	let closeBtn = document.createElement('button');
 	closeBtn.textContent = 'Cerrar';
 	closeBtn.id = 'closeBtn'
-	closeBtn.addEventListener('click',CloseModal(id));
+	closeBtn.addEventListener('click',CloseModal(id,closeBtn));
 	btnid.className = 'popupCard';
 	popupInfo.appendChild(btnid);
 	popupInfo.appendChild(closeBtn);
@@ -68,11 +68,10 @@ function OpenModal(id) {
 	//  <div onclick="CloseModal()" class="CloseIcon">&#10006;</div>
 	element.style.visibility = 'visible';
 }
-function CloseModal(id){
+function CloseModal(id,closeBtn){
 	let element = document.getElementById('overlay');
 	let principalDiv = document.getElementById('pokeCards');
 	let btnid = document.getElementById(id);
-	let closeBtn = document.getElementById('closeBtn')
 	closeBtn.addEventListener('click',function(btnid, principalDiv, element){
 		principalDiv.appendChild(btnid);
 		element.style.visibility = 'hidden';
