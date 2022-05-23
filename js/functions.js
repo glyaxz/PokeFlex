@@ -1,6 +1,5 @@
 const header = document.querySelector('header');
 const section = document.getElementById('pokeCards');
-const popup = document.querySelector('')
 let Gen=1
 let jsonResp
 
