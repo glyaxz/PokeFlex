@@ -1,5 +1,4 @@
-{
-  "gen1":[{
+{"gen1":[{
     "1":{
       "name":"squirtle",
       "type":"agua",
@@ -24,8 +23,7 @@
       "initial_level":"5",
       "strong_vs":"water"
     }
-  }],
-  "gen2":[{
+  }],"gen2":[{
     "1":{
       "name":"totodile",
       "type":"water",
@@ -50,8 +48,7 @@
       "initial_level":"2",
       "strong_vs":"none"
     }
-  }],
-  "gen3":{
+  }],"gen3":{
     "":""
   }
 }
