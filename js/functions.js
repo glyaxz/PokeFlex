@@ -45,7 +45,7 @@ function loadGen(generation,json){
 		myImg.width = 50;
 
 		document.getElementById('pokeCards').appendChild(myDiv);
-		myDiv.addEventListener('onclick', OpenModal(myDiv))
+		// myDiv.addEventListener('onclick', OpenModal(myDiv))
 
 	}
 
@@ -57,11 +57,11 @@ function clearCards(){
 }
 
 // Pop Up
-function OpenModal(div) {
-	let element = document.getElementById('overlay');
-	element.style.display = 'block'
-}
-function CloseModal() {
-	let element = document.getElementById('overlay')
-	element.style.display = 'none'
-}
+// function OpenModal(div) {
+// 	let element = document.getElementById('overlay');
+// 	element.style.display = 'block'
+// }
+// function CloseModal() {
+// 	let element = document.getElementById('overlay')
+// 	element.style.display = 'none'
+// }
