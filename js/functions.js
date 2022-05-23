@@ -46,25 +46,8 @@ function loadGen(generation,json){
 		myImg.width = 50;
 
 		document.getElementById('pokeCards').appendChild(myDiv)
-		div=myDiv
+		popups(myDiv);
 	}
-
-	popup.appendChild(div)
-
-	div.addEventListener('click', () => {
-		popup.style.display = 'block';
-	});
-	 
-	close.addEventListener('click', () => {
-		popup.style.display = 'none';
-	});
-	 
-	popup.addEventListener('click', e => {
-		// console.log(e);
-		if(e.target.className === 'popup-wrapper') {
-			popup.style.display = 'none';
-		}
-	});
 
 }
 
@@ -74,3 +57,17 @@ function clearCards(){
 
 // Pop Up
 
+function popups(div){
+	popup.appendChild(div);
+	div.addEventListener('click', () => {
+		popup.style.display = 'block';
+	});
+	close.addEventListener('click', () => {
+		popup.style.display = 'none';
+	});
+	popup.addEventListener('click', e => {
+		if(e.target.className === 'popup-wrapper') {
+			popup.style.display = 'none';
+		}
+	});
+}
