@@ -64,8 +64,8 @@ function OpenModal(id) {
 	btnCloned.className = 'popupCard';
 	closeBtn.addEventListener('click',function(){
 		let element = document.getElementById('overlay');
-		console.log('cerrado')
 		element.style.visibility = 'hidden';
+		clearPopup();
 	});
 	popupInfo.appendChild(btnCloned);
 	popupInfo.appendChild(closeBtn);
@@ -82,4 +82,8 @@ function loadListeners(){
 			OpenModal(id);
 		})
 	}
+}
+
+function clearPopup(){
+	popupInfo.innerHTML = ""
 }
