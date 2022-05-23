@@ -20,7 +20,7 @@ loadGen(Gen,jsonResp)
 
 function loadGen(generation,json){
 
-	const pokedex = JSON.parse(json);
+	const pokedex = $.parseJSON(json);
 
   	for (var i = 0; i < pokedex.length; i++) {
 		const myArticle = document.createElement('article');
@@ -32,12 +32,11 @@ function loadGen(generation,json){
 
 		myArticle.classList = 'pokecard'
 		myPara1.textContent = 'Nombre: ' + pokedex['gen'+generation].i.name;
-		myPara2.textContent = 'Tipo: ' + pokedex['gen'+generation].i.type;
+		myPara2.textContent = 'Tipo: ' + pokedex['gen'+generation][generation-1][i].type;
 		myPara3.textContent = 'Nivel inicial:' + pokedex['gen'+generation].i.initial_level;
 		myPara4.textContent = 'Fuerte contra:' + pokedex['gen'+generation].i.strong_vs;
 		myImg.src = '/img/'+pokedex['gen'+generation].i.name+'.png';
 		myImg.width = 200;
-
 
 
 		myArticle.appendChild(myH2);
