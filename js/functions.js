@@ -69,7 +69,7 @@ function loadListeners(){
 	let btns = document.getElementsByClassName('pokecard-individual');
 	for(let i = 0; i < btns.length; i++){
 		btns[i].addEventListener('click',function(){
-			console.log(i);
+			OpenModal(btns[i].getAttribute('id'))
 		})
 	}
 }
