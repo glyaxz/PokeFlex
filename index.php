@@ -37,7 +37,7 @@
 
 	<div class="overlay" id="overlay">
       <div class="popup">
-        <div class="popupInfo">
+        <div id="popupInfo" class="popupInfo">
 			<h2>Informacion dentro del popup</h2>
 		</div>
       </div>
