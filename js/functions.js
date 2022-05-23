@@ -50,6 +50,15 @@ function loadGen(generation,json){
 		myDiv.addEventListener('onclick', function(){
 			popup.style.display = 'block';
 		})
+		close.addEventListener('click', () => {
+			popup.style.display = 'none';
+		});
+		 
+		popup.addEventListener('click', e => {
+			if(e.target.className === 'popup-wrapper') {
+				popup.style.display = 'none';
+			}
+		});
 	}
 
 }
@@ -62,13 +71,3 @@ function clearCards(){
 
 
  
-close.addEventListener('click', () => {
-    popup.style.display = 'none';
-});
- 
-popup.addEventListener('click', e => {
-    // console.log(e);
-    if(e.target.className === 'popup-wrapper') {
-        popup.style.display = 'none';
-    }
-});
