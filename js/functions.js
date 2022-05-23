@@ -23,7 +23,7 @@ function loadGen(generation,json){
 
 	const pokedex = JSON.parse(json);
 
-  	for (var i = 1; i < 4; i++) {
+  	for (var i = 1; i < 5; i++) {
 		const myDiv = document.createElement('div');
 		const myPara1 = document.createElement('p');
 		const myImg = document.createElement('img');
@@ -37,14 +37,14 @@ function loadGen(generation,json){
 		myDiv.appendChild(myPara4);
 		myDiv.appendChild(myImg);
 
-		myDiv.className = 'pokecard';
+		myDiv.className = 'pokecard-individual';
 		myDiv.id = 'card'+i;
 		myPara1.textContent = 'Nombre: ' + pokedex['gen'+generation][i].name;
 		myPara2.textContent = 'Tipo: ' + pokedex['gen'+generation][i].type;
 		myPara3.textContent = 'Nivel inicial:' + pokedex['gen'+generation][i].initial_level;
 		myPara4.textContent = 'Fuerte contra:' + pokedex['gen'+generation][i].strong_vs;
 		myImg.src = '/img/'+pokedex['gen'+generation][i].name+'.png';
-		myImg.width = 200;
+		myImg.width = 50;
 
 		document.getElementById('pokeCards').appendChild(myDiv)
 		

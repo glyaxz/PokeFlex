@@ -18,10 +18,7 @@
 	border-radius: 2px;
 	background-color: transparent;
 }
-.pokecard:hover{
+.pokecard-individual:hover{
 	background-color: lightblue;
-    -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
 }
 
