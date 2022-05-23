@@ -45,6 +45,7 @@ function loadGen(generation,json){
 		myImg.src = '/img/'+pokedex['gen'+generation][i].name+'.png';
 		myImg.width = 50;
 
+		popup.appendChild(myDiv)
 		document.getElementById('pokeCards').appendChild(myDiv)
 
 		myDiv.addEventListener('click', () => {
