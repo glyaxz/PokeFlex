@@ -22,7 +22,7 @@ function loadGen(generation,json){
 
 	const pokedex = JSON.parse(json);
 
-  	for (var i = 0; i < pokedex.length; i++) {
+  	for (var i = 1; i < 5; i++) {
 		const myArticle = document.createElement('article');
 		const myPara1 = document.createElement('p');
 		const myImg = document.createElement('img');
