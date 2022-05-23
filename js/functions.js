@@ -63,7 +63,7 @@ function clearCards(){
 
 // Pop Up
 function OpenModal(id) {
-	let info = 
+	// let info = 
 	let element = document.getElementById('overlay');
 	element.style.display = 'block'
 }
