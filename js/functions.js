@@ -68,11 +68,12 @@ function OpenModal(id) {
 	element.style.visibility = 'visible';
 }
 function CloseModal(id){
+	console.log('lorem')
 	let element = document.getElementById('overlay');
-	element.style.visibility = 'hidden';
 	let principalDiv = document.getElementById('pokeCards');
 	let btnid = document.getElementById(id);
 	principalDiv.appendChild(btnid);
+	element.style.visibility = 'hidden';
 	
 }
 
