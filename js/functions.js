@@ -42,7 +42,7 @@ function loadGen(generation,json){
 		myPara3.textContent = 'Nivel inicial:' + pokedex['gen'+generation][i].initial_level;
 		myPara4.textContent = 'Fuerte contra:' + pokedex['gen'+generation][i].strong_vs;
 		myImg.src = '/img/'+pokedex['gen'+generation][i].name+'.png';
-		myImg.width = 200;X
+		myImg.width = 200;
   	}
 
 
