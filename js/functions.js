@@ -31,11 +31,11 @@ function loadGen(generation,json){
 		const myPara4 = document.createElement('p');
 
 		myArticle.className = 'pokecard'
-		myPara1.textContent = 'Nombre: ' + pokedex['gen'+generation][0][i][0].name;
-		myPara2.textContent = 'Tipo: ' + pokedex['gen'+generation][0][i][0].type;
-		myPara3.textContent = 'Nivel inicial:' + pokedex['gen'+generation][0][i][0].initial_level;
-		myPara4.textContent = 'Fuerte contra:' + pokedex['gen'+generation][0][i][0].strong_vs;
-		myImg.src = '/img/'+pokedex['gen'+generation][0][i][0].name+'.png';
+		myPara1.textContent = 'Nombre: ' + pokedex['gen'+generation][i][0].name;
+		myPara2.textContent = 'Tipo: ' + pokedex['gen'+generation][i][0].type;
+		myPara3.textContent = 'Nivel inicial:' + pokedex['gen'+generation][i][0].initial_level;
+		myPara4.textContent = 'Fuerte contra:' + pokedex['gen'+generation][i][0].strong_vs;
+		myImg.src = '/img/'+pokedex['gen'+generation][i][0].name+'.png';
 		myImg.width = 200;
 
 
