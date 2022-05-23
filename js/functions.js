@@ -19,7 +19,6 @@ function setGen(setGen){
 loadGen(Gen,jsonResp)
 
 function loadGen(generation,json){
-	// $('pokeCards').empty();
 
 	const pokedex = json['gen'+generation];
 
