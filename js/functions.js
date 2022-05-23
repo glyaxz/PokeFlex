@@ -55,9 +55,9 @@ function clearCards(){
 
 // Pop Up
 function OpenModal(id) {
-	let element = document.getElementById('overlay');
+
 	let btnid=document.getElementById(id);
-	element.appendChild(btnid)
+	popupInfo.appendChild(btnid)
 	//  <div onclick="CloseModal()" class="CloseIcon">&#10006;</div>
 	element.style.display = 'block'
 }
