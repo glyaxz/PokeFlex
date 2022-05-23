@@ -44,16 +44,10 @@ function loadGen(generation,json){
 		myPara4.textContent = 'Fuerte contra: ' + pokedex['gen'+generation][i].strong_vs;
 		myImg.src = '/img/'+pokedex['gen'+generation][i].name+'.png';
 		myImg.width = 50;
-
+		myDiv.addEventListener('click',OpenModal());
 		document.getElementById('pokeCards').appendChild(myDiv);
 		// myDiv.addEventListener('onclick', OpenModal(myDiv))
 		div=myDiv
-	}
-
-	let botones = document.getElementsByClassName('pokecard-individual')
-	for (let i = 1; i <= botones.length; i++) {
-		let btn = document.getElementById("card"+i)
-		btn.addEventListener('click', OpenModal("card"+i))
 	}
 
 }
