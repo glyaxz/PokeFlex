@@ -23,7 +23,7 @@ function loadGen(generation,json){
 
 	const pokedex = JSON.parse(json);
 
-  	for (var i = 1; i < 5; i++) {
+  	for (var i = 1; i < 4; i++) {
 		const myArticle = document.createElement('div');
 		const myPara1 = document.createElement('p');
 		const myImg = document.createElement('img');
@@ -48,3 +48,7 @@ function loadGen(generation,json){
 		section.appendChild(myArticle)
   	}
 }
+
+// function clearCards(){
+// 	section.removeChild()
+// }
