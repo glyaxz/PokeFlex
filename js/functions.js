@@ -48,7 +48,7 @@ function loadGen(generation,json){
 		// myDiv.addEventListener('onclick', OpenModal(myDiv))
 
 	}
-	
+
 	let botones = document.getElementsByClassName('pokecard-individual')
 	for(let i = 0; i < botones.length; i++){
 		botones[i].addEventListener('onclick', OpenModal(botones[i]))
@@ -62,7 +62,6 @@ function clearCards(){
 // Pop Up
 function OpenModal(div) {
 	let element = document.getElementById('overlay');
-	popupInfo.appendChild(div);
 	element.style.display = 'block'
 }
 function CloseModal(){
