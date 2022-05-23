@@ -83,12 +83,14 @@
 	text-align: center;
 	background: white;
 }
-.overlay .pokecard-individual{
+.popupCard{
 	position: relative;
+	padding-left: 5%;
+	padding-top: 5%;
 	justify-content: center;
 	padding: auto;
-	padding-top: 5%;
-	padding-bottom: 5%;
+	
+	width: 90%;
 }
 .overlay button{
 	background-color: cadetblue;

@@ -59,6 +59,8 @@ function OpenModal(id) {
 	let btnid=document.getElementById(id);
 	let closeBtn = document.createElement('button');
 	closeBtn.click(CloseModal(id))
+	btnid.className = 'pokecard-individual popupCard'
+	popupInfo.appendChild(closeBtn)
 	popupInfo.appendChild(btnid)
 	//  <div onclick="CloseModal()" class="CloseIcon">&#10006;</div>
 	element.style.display = 'block'
