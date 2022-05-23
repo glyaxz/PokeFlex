@@ -66,6 +66,7 @@ function OpenModal(id) {
 	// let info = 
 	let element = document.getElementById('overlay');
 	element.style.display = 'block'
+	console.log(id)
 }
 function CloseModal(){
 	let element = document.getElementById('overlay')
