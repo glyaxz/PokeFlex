@@ -14,6 +14,7 @@ jsonResp = req.response;
 
 function setGen(setGen){
 	Gen = setGen;
+	loadGen(Gen,jsonResp)
 }
 
 loadGen(Gen,jsonResp)
@@ -39,7 +40,6 @@ function loadGen(generation,json){
 		myImg.width = 200;
 
 
-		myArticle.appendChild(myH2);
 		myArticle.appendChild(myPara1);
 		myArticle.appendChild(myPara2);
 		myArticle.appendChild(myPara3);
