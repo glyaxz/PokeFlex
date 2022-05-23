@@ -57,12 +57,17 @@ function clearCards(){
 function OpenModal(id) {
 	let element = document.getElementById('overlay');
 	let btnid=document.getElementById(id);
+	let closeBtn = document.createElement('button');
+	closeBtn.click(CloseModal(id))
 	popupInfo.appendChild(btnid)
 	//  <div onclick="CloseModal()" class="CloseIcon">&#10006;</div>
 	element.style.display = 'block'
 }
-function CloseModal(){
+function CloseModal(id){
 	let element = document.getElementById('overlay')
+	let principalDiv = document.getElementById('pokecard');
+	let btnid = document.getElementById(id);
+	principalDiv.appendChild(btnid)
 	element.style.display = 'none';
 }
 
