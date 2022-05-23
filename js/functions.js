@@ -1,5 +1,6 @@
 const header = document.querySelector('header');
 const section = document.getElementById('pokeCards');
+const popupInfo = document.getElementById('popupInfo')
 let Gen=1
 let jsonResp
 
@@ -44,8 +45,10 @@ function loadGen(generation,json){
 		myImg.width = 50;
 
 		document.getElementById('pokeCards').appendChild(myDiv);
-		myDiv.addEventListener('onclick', OpenModal())
+		
+
 	}
+
 
 }
 
