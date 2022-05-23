@@ -47,7 +47,7 @@ function loadGen(generation,json){
 
 		document.getElementById('pokeCards').appendChild(myDiv)
 		
-		myDiv.addEventListener('onclick', function(){
+		myDiv.addEventListener('click', () => {
 			popup.style.display = 'block';
 		})
 		close.addEventListener('click', () => {
