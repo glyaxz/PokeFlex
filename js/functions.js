@@ -55,9 +55,11 @@ function clearCards(){
 
 // Pop Up
 function OpenModal(id) {
-	// let element = document.getElementById('overlay');
-	// element.style.display = 'block'
-	console.log(id)
+	let element = document.getElementById('overlay');
+	let btnid=document.getElementById(id);
+	element.appendChild(btnid)
+	//  <div onclick="CloseModal()" class="CloseIcon">&#10006;</div>
+	element.style.display = 'block'
 }
 function CloseModal(){
 	let element = document.getElementById('overlay')

@@ -37,7 +37,6 @@
 
 	<div class="overlay" id="overlay">
       <div class="popup">
-        <div onclick="CloseModal()" class="CloseIcon">&#10006;</div>
         <div class="popupInfo">
 			<h2>Informacion dentro del popup</h2>
 		</div>
