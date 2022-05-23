@@ -30,15 +30,7 @@ function loadGen(generation,json){
 		const myPara2 = document.createElement('p');
 		const myPara3 = document.createElement('p');
 		const myPara4 = document.createElement('p');
-
-		myArticle.className = 'pokecard'
-		myPara1.textContent = 'Nombre: ' + pokedex['gen'+generation][i].name;
-		myPara2.textContent = 'Tipo: ' + pokedex['gen'+generation][i].type;
-		myPara3.textContent = 'Nivel inicial:' + pokedex['gen'+generation][i].initial_level;
-		myPara4.textContent = 'Fuerte contra:' + pokedex['gen'+generation][i].strong_vs;
-		myImg.src = '/img/'+pokedex['gen'+generation][i].name+'.png';
-		myImg.width = 200;
-
+		
 		myArticle.appendChild(myPara1);
 		myArticle.appendChild(myPara2);
 		myArticle.appendChild(myPara3);
@@ -47,6 +39,15 @@ function loadGen(generation,json){
 
 		section.appendChild(myArticle)
   	}
+		myArticle.className = 'pokecard'
+		myPara1.textContent = 'Nombre: ' + pokedex['gen'+generation][i].name;
+		myPara2.textContent = 'Tipo: ' + pokedex['gen'+generation][i].type;
+		myPara3.textContent = 'Nivel inicial:' + pokedex['gen'+generation][i].initial_level;
+		myPara4.textContent = 'Fuerte contra:' + pokedex['gen'+generation][i].strong_vs;
+		myImg.src = '/img/'+pokedex['gen'+generation][i].name+'.png';
+		myImg.width = 200;
+
+
 }
 
 // function clearCards(){
