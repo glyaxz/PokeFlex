@@ -37,14 +37,15 @@ function loadGen(generation,json){
 		myArticle.appendChild(myPara4);
 		myArticle.appendChild(myImg);
 
-  	}
-
 		myPara1.textContent = 'Nombre: ' + pokedex['gen'+generation][i].name;
 		myPara2.textContent = 'Tipo: ' + pokedex['gen'+generation][i].type;
 		myPara3.textContent = 'Nivel inicial:' + pokedex['gen'+generation][i].initial_level;
 		myPara4.textContent = 'Fuerte contra:' + pokedex['gen'+generation][i].strong_vs;
 		myImg.src = '/img/'+pokedex['gen'+generation][i].name+'.png';
-		myImg.width = 200;
+		myImg.width = 200;X
+  	}
+
+
 
 
 }
