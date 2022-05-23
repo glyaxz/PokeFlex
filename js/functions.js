@@ -64,3 +64,10 @@ function CloseModal(){
 	let element = document.getElementById('overlay')
 	element.style.display = 'none';
 }
+
+let btns = document.getElementsByClassName('pokecard-individual');
+for(let i = 0; i < btns.length; i++){
+	btns[1].addEventListener('click',function(){
+		console.log(i);
+	})
+}
