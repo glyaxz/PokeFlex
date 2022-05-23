@@ -1,5 +1,7 @@
 const header = document.querySelector('header');
 const section = document.getElementById('pokeCards');
+const popup = document.querySelector('.popup-wrapper');
+const close = document.querySelector('.popup-close');
 let Gen=1
 let jsonResp
 
@@ -44,6 +46,10 @@ function loadGen(generation,json){
 		myImg.width = 50;
 
 		document.getElementById('pokeCards').appendChild(myDiv)
+		
+		myDiv.addEventListener('onclick', function(){
+			popup.style.display = 'block';
+		})
 	}
 
 }
@@ -51,3 +57,18 @@ function loadGen(generation,json){
 function clearCards(){
 	section.innerHTML = "";
 }
+
+// Pop Up
+
+
+ 
+close.addEventListener('click', () => {
+    popup.style.display = 'none';
+});
+ 
+popup.addEventListener('click', e => {
+    // console.log(e);
+    if(e.target.className === 'popup-wrapper') {
+        popup.style.display = 'none';
+    }
+});
