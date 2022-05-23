@@ -58,18 +58,20 @@ function OpenModal(id) {
 	let element = document.getElementById('overlay');
 	let btnid=document.getElementById(id);
 	let closeBtn = document.createElement('button');
-	closeBtn.click(CloseModal(id))
-	btnid.className = 'pokecard-individual popupCard'
-	popupInfo.appendChild(closeBtn)
-	popupInfo.appendChild(btnid)
+	closeBtn.textContent = 'Cerrar';
+	closeBtn.click(CloseModal(id));
+	btnid.className = 'popupCard';
+	popupInfo.appendChild(btnid);
+	popupInfo.appendChild(closeBtn);
+
 	//  <div onclick="CloseModal()" class="CloseIcon">&#10006;</div>
-	element.style.display = 'block'
+	element.style.display = 'block';
 }
 function CloseModal(id){
-	let element = document.getElementById('overlay')
+	let element = document.getElementById('overlay');
 	let principalDiv = document.getElementById('pokeCards');
 	let btnid = document.getElementById(id);
-	principalDiv.appendChild(btnid)
+	principalDiv.appendChild(btnid);
 	element.style.display = 'none';
 }
 
@@ -78,7 +80,7 @@ function loadListeners(){
 	for(let i = 0; i < btns.length; i++){
 		btns[i].addEventListener('click',function(){
 			let id = btns[i].getAttribute('id');
-			OpenModal(id)
+			OpenModal(id);
 		})
 	}
 }

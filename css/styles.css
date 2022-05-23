@@ -89,13 +89,19 @@
 	padding-top: 5%;
 	justify-content: center;
 	padding: auto;
-	
+
 	width: 90%;
 }
-.overlay button{
-	background-color: cadetblue;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	opacity: 100;
+.closeBtn{
+	bottom: 0;
+	text-align: center;
+	right: 50%;
+	left: 50%;
+	background-color: transparent;
+	border-radius: 0.7px;
+}
+.closeBtn:hover{
+	background-color: darkgrey;
 }
 
 
