@@ -47,7 +47,7 @@ function loadGen(generation,json){
 		document.getElementById('pokeCards').appendChild(myDiv);
 		// myDiv.addEventListener('onclick', OpenModal(myDiv))
 	}
-
+	loadListeners();
 }
 function clearCards(){
 	section.innerHTML = "";
@@ -65,9 +65,11 @@ function CloseModal(){
 	element.style.display = 'none';
 }
 
-let btns = document.getElementsByClassName('pokecard-individual');
-for(let i = 0; i < btns.length; i++){
-	btns[1].addEventListener('click',function(){
-		console.log(i);
-	})
+function loadListeners(){
+	let btns = document.getElementsByClassName('pokecard-individual');
+	for(let i = 0; i < btns.length; i++){
+		btns[i].addEventListener('click',function(){
+			console.log(i);
+		})
+	}
 }
