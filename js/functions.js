@@ -10,15 +10,13 @@ const req = new XMLHttpRequest();
 req.open('GET', '/api/pokedex.json', false);
 req.responsiveType = 'json';
 req.send();
-
-req.onload = function(){
-	jsonResp = req.response;
-}
+jsonResp = req.response;
 
 function setGen(setGen){
 	Gen = setGen;
-	loadGen(Gen,jsonResp)
 }
+
+loadGen(Gen,jsonResp)
 
 function loadGen(generation,json){
 	$('pokeCards').empty();
