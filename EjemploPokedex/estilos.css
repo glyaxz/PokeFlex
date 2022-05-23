@@ -1,0 +1,29 @@
+html {
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+  }
+  
+  body {
+      background-color: aqua !important;
+  }
+  
+  h1, h2 {
+    font-family: 'Faster One', cursive;
+    text-align: center;
+  }
+.pointer{
+    pointer-events: auto;
+}
+.salida{
+    width: 50px;
+    height: 50px;
+    align-items: top;
+    align-items: left;
+}
+
+
+.card-img-top {
+    height: 286px;
+    width: 286px;
+    /* border-top-left-radius: calc(0.25rem - 1px); */
+    border-top-right-radius: calc(0.25rem - 1px);
+}
