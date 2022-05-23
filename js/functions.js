@@ -59,6 +59,7 @@ function OpenModal(id) {
 	let btnid=document.getElementById(id);
 	let closeBtn = document.createElement('button');
 	closeBtn.textContent = 'Cerrar';
+	closeBtn.id = 'closeBtn'
 	closeBtn.addEventListener('click',CloseModal(id));
 	btnid.className = 'popupCard';
 	popupInfo.appendChild(btnid);
@@ -68,13 +69,14 @@ function OpenModal(id) {
 	element.style.visibility = 'visible';
 }
 function CloseModal(id){
-	console.log('lorem')
 	let element = document.getElementById('overlay');
 	let principalDiv = document.getElementById('pokeCards');
 	let btnid = document.getElementById(id);
-	principalDiv.appendChild(btnid);
-	element.style.visibility = 'hidden';
-	
+	let closeBtn = document.getElementById('closeBtn')
+	closeBtn.addEventListener('click',function(btnid, principalDiv, element){
+		principalDiv.appendChild(btnid);
+		element.style.visibility = 'hidden';
+	})
 }
 
 function loadListeners(){
