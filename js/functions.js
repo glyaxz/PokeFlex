@@ -59,7 +59,7 @@ function OpenModal(id) {
 	let btnid=document.getElementById(id);
 	let closeBtn = document.createElement('button');
 	closeBtn.textContent = 'Cerrar';
-	closeBtn.click(CloseModal(id));
+	closeBtn.addEventListener('click',CloseModal(id));
 	btnid.className = 'popupCard';
 	popupInfo.appendChild(btnid);
 	popupInfo.appendChild(closeBtn);
