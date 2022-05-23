@@ -23,7 +23,7 @@ function setGen(setGen){
 function loadGen(generation,json){
 	$('pokeCards').empty();
 
-	const pokedex = jsonResp['gen1'];
+	const pokedex = json['gen1'];
 
   	for (var i = 0; i < pokedex.length; i++) {
 		const myArticle = document.createElement('article');
