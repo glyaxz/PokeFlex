@@ -35,16 +35,6 @@
 		</h4>
 	</div>
 
-	<!-- Pop up -->
-
-	<div class="popup-wrapper">
-        <div class="popup">
-            <div class="popup-close">x</div>
-            <div class="popup-content">
-            </div>
-        </div>
-	</div>
-	<!-- End Pop Up -->
 
 	<section>
 		<div class="menu">
