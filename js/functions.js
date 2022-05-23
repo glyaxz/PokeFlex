@@ -44,7 +44,7 @@ function loadGen(generation,json){
 		myPara4.textContent = 'Fuerte contra: ' + pokedex['gen'+generation][i].strong_vs;
 		myImg.src = '/img/'+pokedex['gen'+generation][i].name+'.png';
 		myImg.width = 50;
-		myDiv.addEventListener('click',OpenModal());
+		myDiv.addEventListener('onclick',OpenModal());
 		document.getElementById('pokeCards').appendChild(myDiv);
 		// myDiv.addEventListener('onclick', OpenModal(myDiv))
 		div=myDiv
