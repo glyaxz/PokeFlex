@@ -58,24 +58,19 @@ function OpenModal(id) {
 	let element = document.getElementById('overlay');
 	let btnid=document.getElementById(id);
 	let closeBtn = document.createElement('button');
-	closeBtn.textContent = 'Cerrar';
+	let btnCloned = btnid.cloneNode(true);
+	btnCloned.textContent = 'Cerrar';
 	closeBtn.id = 'closeBtn'
-	closeBtn.addEventListener('click',CloseModal(id,closeBtn));
-	btnid.className = 'popupCard';
-	popupInfo.appendChild(btnid);
+	closeBtn.addEventListener('click',CloseModal(element));
+	btnCloned.className = 'popupCard';
+	popupInfo.appendChild(btnCloned);
 	popupInfo.appendChild(closeBtn);
 
 	//  <div onclick="CloseModal()" class="CloseIcon">&#10006;</div>
 	element.style.visibility = 'visible';
 }
-function CloseModal(id,closeBtn){
-	let element = document.getElementById('overlay');
-	let principalDiv = document.getElementById('pokeCards');
-	let btnid = document.getElementById(id);
-	closeBtn.addEventListener('click',function(btnid, principalDiv, element){
-		principalDiv.appendChild(btnid);
-		element.style.visibility = 'hidden';
-	})
+function CloseModal(element){
+	element.style.visibility = 'hidden'
 }
 
 function loadListeners(){
