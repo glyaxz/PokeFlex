@@ -32,7 +32,7 @@
 			</div>
 		</div>
 
-		<div id="pokeCards" class="pokeCards">
+		<div id="pokeCards" class="pokeCard">
 			<!-- Aqui se introduciran via JS las cartas dependiendo la gen que se escoja -->
 		</div>
 
