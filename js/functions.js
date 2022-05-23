@@ -30,14 +30,13 @@ function loadGen(generation,json){
 		const myPara2 = document.createElement('p');
 		const myPara3 = document.createElement('p');
 		const myPara4 = document.createElement('p');
-		
+
 		myArticle.appendChild(myPara1);
 		myArticle.appendChild(myPara2);
 		myArticle.appendChild(myPara3);
 		myArticle.appendChild(myPara4);
 		myArticle.appendChild(myImg);
 
-		section.appendChild(myArticle)
   	}
 		myArticle.className = 'pokecard'
 		myPara1.textContent = 'Nombre: ' + pokedex['gen'+generation][i].name;
