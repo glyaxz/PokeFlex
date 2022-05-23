@@ -35,7 +35,7 @@ function loadGen(generation,json){
 		myDiv.appendChild(myPara3);
 		myDiv.appendChild(myPara4);
 		myDiv.appendChild(myImg);
-
+// Añadir los listener de forma que al clickar individualmente saque por consola el log
 		myDiv.className = 'pokecard-individual';
 		myDiv.id = 'card'+i;
 		myPara1.textContent = 'Nombre: ' + pokedex['gen'+generation][i].name;
@@ -44,10 +44,8 @@ function loadGen(generation,json){
 		myPara4.textContent = 'Fuerte contra: ' + pokedex['gen'+generation][i].strong_vs;
 		myImg.src = '/img/'+pokedex['gen'+generation][i].name+'.png';
 		myImg.width = 50;
-		myDiv.addEventListener('onclick',OpenModal());
 		document.getElementById('pokeCards').appendChild(myDiv);
 		// myDiv.addEventListener('onclick', OpenModal(myDiv))
-		div=myDiv
 	}
 
 }
