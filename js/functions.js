@@ -45,6 +45,6 @@ function loadGen(generation,json){
 		myArticle.appendChild(myPara4);
 		myArticle.appendChild(myImg);
 
-		section.appendChild(myArticle);
+		section.appendChild(myArticle)
   	}
 }
