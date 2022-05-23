@@ -13,15 +13,14 @@ req.send();
 
 req.onload = function(){
 	jsonResp = req.response;
-
 }
 
 function setGen(setGen){
 	Gen = setGen;
-	loadGen(Gen)
+	loadGen(Gen,jsonResp)
 }
 
-function loadGen(generation){
+function loadGen(generation,json){
 	$('pokeCards').empty();
 
 	const pokedex = jsonResp['gen1'];
