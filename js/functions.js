@@ -3,6 +3,7 @@ const section = document.getElementById('pokeCards');
 const popupInfo = document.getElementById('popupInfo');
 let Gen=1
 let jsonResp
+let div
 
 const req = new XMLHttpRequest();
 req.open('GET', '/api/pokedex.json', false);
@@ -46,12 +47,13 @@ function loadGen(generation,json){
 
 		document.getElementById('pokeCards').appendChild(myDiv);
 		// myDiv.addEventListener('onclick', OpenModal(myDiv))
-
+		div=myDiv
 	}
 
 	let botones = document.getElementsByClassName('pokecard-individual')
-	for(let i = 0; i < botones.length; i++){
-		botones[i].addEventListener('onclick', OpenModal(botones[i]))
+	for (let i = 1; i <= botones.length; i++) {
+		let btn = document.getElementById("card"+i)
+		btn.addEventListener('click', OpenModal("card"+i))
 	}
 
 }
@@ -60,7 +62,8 @@ function clearCards(){
 }
 
 // Pop Up
-function OpenModal(div) {
+function OpenModal(id) {
+	let info = 
 	let element = document.getElementById('overlay');
 	element.style.display = 'block'
 }
