@@ -24,18 +24,18 @@ function loadGen(generation,json){
 	const pokedex = JSON.parse(json);
 
   	for (var i = 1; i < 4; i++) {
-		const myArticle = document.createElement('div');
+		const myDiv = document.createElement('div');
 		const myPara1 = document.createElement('p');
 		const myImg = document.createElement('img');
 		const myPara2 = document.createElement('p');
 		const myPara3 = document.createElement('p');
 		const myPara4 = document.createElement('p');
 
-		myArticle.appendChild(myPara1);
-		myArticle.appendChild(myPara2);
-		myArticle.appendChild(myPara3);
-		myArticle.appendChild(myPara4);
-		myArticle.appendChild(myImg);
+		myDiv.appendChild(myPara1);
+		myDiv.appendChild(myPara2);
+		myDiv.appendChild(myPara3);
+		myDiv.appendChild(myPara4);
+		myDiv.appendChild(myImg);
 
 		myPara1.textContent = 'Nombre: ' + pokedex['gen'+generation][i].name;
 		myPara2.textContent = 'Tipo: ' + pokedex['gen'+generation][i].type;
@@ -43,6 +43,9 @@ function loadGen(generation,json){
 		myPara4.textContent = 'Fuerte contra:' + pokedex['gen'+generation][i].strong_vs;
 		myImg.src = '/img/'+pokedex['gen'+generation][i].name+'.png';
 		myImg.width = 200;
+
+		document.getElementById('pokeCards').appendChild(myDiv)
+		
   	}
 
 
