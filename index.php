@@ -74,5 +74,5 @@
 </body>
 </html>
 <?php
-
+//Hecho por Javier 'glyaxz' Garcia Ruiz
 ?>

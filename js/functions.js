@@ -87,3 +87,6 @@ function loadListeners(){
 function popUpCleaner(){
 	popupInfo.innerHTML = ""
 }
+
+
+//Hecho por Javier 'glyaxz' Garcia Ruiz
