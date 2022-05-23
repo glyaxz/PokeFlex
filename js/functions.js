@@ -49,7 +49,7 @@ function loadGen(generation,json){
 
 		popup.appendChild(myDiv)
 		
-		myDiv.addEventListener('click', function popUp(myDiv,popup){
+		myDiv.addEventListener('click', function(myDiv,popup){
 			myDiv.addEventListener('click', () => {
 				popup.style.display = 'block';
 			})
