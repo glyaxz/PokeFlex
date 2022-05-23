@@ -45,7 +45,8 @@ function loadGen(generation,json){
 		myImg.width = 50;
 
 		document.getElementById('pokeCards').appendChild(myDiv);
-		
+		popupInfo.appendChild(myDiv)
+		myDiv.addEventListener('onclick', OpenModal())
 
 	}
 
