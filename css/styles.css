@@ -65,7 +65,7 @@
 /* Popup */
 .overlay {
 	position: absolute;
-	opacity: 0;
+	display: none;
 	top: 0;
 	right: 0;
 	bottom: 0;

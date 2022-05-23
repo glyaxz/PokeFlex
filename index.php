@@ -38,6 +38,7 @@
 	<div class="overlay" id="overlay">
       <div class="popup">
         <div id="popupInfo" class="popupInfo">
+
 		</div>
       </div>
     </div>
