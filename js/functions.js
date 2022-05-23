@@ -46,7 +46,6 @@ function loadGen(generation,json){
 		myImg.width = 50;
 
 		document.getElementById('pokeCards').appendChild(myDiv)
-		popups(myDiv);
 	}
 
 }
@@ -56,18 +55,3 @@ function clearCards(){
 }
 
 // Pop Up
-
-function popups(div){
-	popup.appendChild(div);
-	div.addEventListener('click', () => {
-		popup.style.display = 'block';
-	});
-	close.addEventListener('click', () => {
-		popup.style.display = 'none';
-	});
-	popup.addEventListener('click', e => {
-		if(e.target.className === 'popup-wrapper') {
-			popup.style.display = 'none';
-		}
-	});
-}
