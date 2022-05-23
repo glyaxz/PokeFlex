@@ -65,7 +65,7 @@ function OpenModal(id) {
 	closeBtn.addEventListener('click',function(){
 		let element = document.getElementById('overlay');
 		element.style.visibility = 'hidden';
-		clearPopup();
+		popUpCleaner();
 	});
 	popupInfo.appendChild(btnCloned);
 	popupInfo.appendChild(closeBtn);
@@ -84,6 +84,6 @@ function loadListeners(){
 	}
 }
 
-function clearPopup(){
+function popUpCleaner(){
 	popupInfo.innerHTML = ""
 }
