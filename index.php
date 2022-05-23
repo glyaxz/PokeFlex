@@ -63,6 +63,7 @@
 
 		<div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
 			Hecho por Javier Garcia Ruiz:
+			<br>
 			<a class="text-dark" href="https://www.github.com/glyaxz/PokeFlex">Enlace al repositorio en GitHub</a>
 		</div>
 		</footer>
