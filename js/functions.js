@@ -68,11 +68,12 @@ function OpenModal(id) {
 	element.style.display = 'block';
 }
 function CloseModal(id){
+	element.style.display = 'none';
 	let element = document.getElementById('overlay');
 	let principalDiv = document.getElementById('pokeCards');
 	let btnid = document.getElementById(id);
 	principalDiv.appendChild(btnid);
-	element.style.display = 'none';
+	
 }
 
 function loadListeners(){
