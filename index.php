@@ -44,7 +44,7 @@
 			</div>
 		</div>
 
-		<div id="pokeCards" class="pokecards">
+		<div id="pokeCards" class="pokecard">
 			<!-- Aqui se introduciran via JS las cartas dependiendo la gen que se escoja -->
 		</div>
 
