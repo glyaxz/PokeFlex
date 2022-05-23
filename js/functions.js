@@ -55,9 +55,8 @@ function clearCards(){
 
 // Pop Up
 function OpenModal(id) {
-	// let info = 
-	let element = document.getElementById('overlay');
-	element.style.display = 'block'
+	// let element = document.getElementById('overlay');
+	// element.style.display = 'block'
 	console.log(id)
 }
 function CloseModal(){
@@ -69,7 +68,8 @@ function loadListeners(){
 	let btns = document.getElementsByClassName('pokecard-individual');
 	for(let i = 0; i < btns.length; i++){
 		btns[i].addEventListener('click',function(){
-			OpenModal(btns[i].getAttribute('id'))
+			let id = btns[i].getAttribute('id');
+			OpenModal(id)
 		})
 	}
 }
