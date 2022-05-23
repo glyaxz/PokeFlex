@@ -85,12 +85,14 @@
 }
 .popupCard{
 	position: relative;
-	padding-left: 5%;
-	padding-top: 5%;
-	justify-content: center;
+	top: 50%;
+	bottom: 50%;
+	text-align: center;
 	padding: auto;
-
 	width: 90%;
+}
+.popupCard img{
+	width: 100px;
 }
 .closeBtn{
 	bottom: 0;

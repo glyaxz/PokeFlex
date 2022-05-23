@@ -61,9 +61,13 @@ function OpenModal(id) {
 	closeBtn.textContent = 'Cerrar';
 	closeBtn.click(CloseModal(id));
 	btnid.className = 'popupCard';
+	// Testing
+	btnid.removeEventListener('onclick',function(){
+		let id = btns[i].getAttribute('id');
+		OpenModal(id);
+	})
 	popupInfo.appendChild(btnid);
 	popupInfo.appendChild(closeBtn);
-
 	//  <div onclick="CloseModal()" class="CloseIcon">&#10006;</div>
 	element.style.display = 'block';
 }
