@@ -61,16 +61,17 @@ function OpenModal(id) {
 	let btnCloned = btnid.cloneNode(true);
 	closeBtn.textContent = 'Cerrar';
 	closeBtn.id = 'closeBtn'
-	closeBtn.addEventListener('click',CloseModal(element));
 	btnCloned.className = 'popupCard';
+	closeBtn.addEventListener('click',function(){
+		let element = document.getElementById('overlay');
+		console.log('cerrado')
+		element.style.visibility = 'hidden';
+	});
 	popupInfo.appendChild(btnCloned);
 	popupInfo.appendChild(closeBtn);
 
 	//  <div onclick="CloseModal()" class="CloseIcon">&#10006;</div>
 	element.style.visibility = 'visible';
-}
-function CloseModal(element){
-	element.style.visibility = 'hidden'
 }
 
 function loadListeners(){

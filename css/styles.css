@@ -85,8 +85,7 @@
 }
 .popupCard{
 	position: relative;
-	top: 50%;
-	bottom: 50%;
+	justify-content: center;
 	text-align: center;
 	padding: auto;
 	width: 90%;
