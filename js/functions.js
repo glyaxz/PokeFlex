@@ -47,23 +47,7 @@ function loadGen(generation,json){
 
 		document.getElementById('pokeCards').appendChild(myDiv)
 
-		popup.appendChild(myDiv)
-		
-		myDiv.addEventListener('click', function(){
-			myDiv.addEventListener('click', () => {
-				popup.style.display = 'block';
-			})
-			close.addEventListener('click', () => {
-				popup.style.display = 'none';
-			});
-			 
-			popup.addEventListener('click', e => {
-				if(e.target.className === 'popup-wrapper') {
-					popup.style.display = 'none';
-				}
-			});
-		}
-		 )
+
 	}
 
 }
