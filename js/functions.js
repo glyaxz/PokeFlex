@@ -1,7 +1,6 @@
 const header = document.querySelector('header');
 const section = document.getElementById('pokeCards');
-const popup = document.querySelector('.popup-wrapper');
-const close = document.querySelector('.popup-close');
+const popup = document.querySelector('')
 let Gen=1
 let jsonResp
 
@@ -45,8 +44,8 @@ function loadGen(generation,json){
 		myImg.src = '/img/'+pokedex['gen'+generation][i].name+'.png';
 		myImg.width = 50;
 
-		document.getElementById('pokeCards').appendChild(myDiv)
-		myDiv.addEventListener('click', OpenModal())
+		document.getElementById('pokeCards').appendChild(myDiv);
+		myDiv.addEventListener('onclick', OpenModal())
 	}
 
 }
@@ -61,6 +60,6 @@ function OpenModal() {
 	element.style.display = 'block'
 }
 function CloseModal() {
-let element = document.getElementById('overlay')
-element.style.display = 'none'
+	let element = document.getElementById('overlay')
+	element.style.display = 'none'
 }
