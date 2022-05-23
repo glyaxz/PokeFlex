@@ -38,7 +38,7 @@ function loadGen(generation,json){
 		myArticle.appendChild(myImg);
 
   	}
-		myArticle.className = 'pokecard'
+
 		myPara1.textContent = 'Nombre: ' + pokedex['gen'+generation][i].name;
 		myPara2.textContent = 'Tipo: ' + pokedex['gen'+generation][i].type;
 		myPara3.textContent = 'Nivel inicial:' + pokedex['gen'+generation][i].initial_level;
