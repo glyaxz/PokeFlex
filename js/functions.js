@@ -24,7 +24,7 @@ function loadGen(generation,json){
 	const pokedex = JSON.parse(json);
 
   	for (var i = 1; i < 5; i++) {
-		const myArticle = document.createElement('article');
+		const myArticle = document.createElement('div');
 		const myPara1 = document.createElement('p');
 		const myImg = document.createElement('img');
 		const myPara2 = document.createElement('p');
@@ -38,7 +38,6 @@ function loadGen(generation,json){
 		myPara4.textContent = 'Fuerte contra:' + pokedex['gen'+generation][i].strong_vs;
 		myImg.src = '/img/'+pokedex['gen'+generation][i].name+'.png';
 		myImg.width = 200;
-
 
 		myArticle.appendChild(myPara1);
 		myArticle.appendChild(myPara2);
