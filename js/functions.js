@@ -59,7 +59,7 @@ function OpenModal(id) {
 	let btnid=document.getElementById(id);
 	let closeBtn = document.createElement('button');
 	let btnCloned = btnid.cloneNode(true);
-	btnCloned.textContent = 'Cerrar';
+	closeBtn.textContent = 'Cerrar';
 	closeBtn.id = 'closeBtn'
 	closeBtn.addEventListener('click',CloseModal(element));
 	btnCloned.className = 'popupCard';
