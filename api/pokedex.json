@@ -49,6 +49,29 @@
       "strong_vs":"Nada"
       }
     },"gen3":{
-    "":""
-  }
+      "1":{
+      "name":"Mudkip",
+      "type":"Agua",
+      "initial_level":"5",
+      "strong_vs":"Fuego"
+      },
+      "2":{
+      "name":"Treeko",
+      "type":"Planta",
+      "initial_level":"5",
+      "strong_vs":"Agua"
+      },
+      "3":{
+      "name":"Torchic",
+      "type":"Fuego",
+      "initial_level":"5",
+      "strong_vs":"Planta"
+      },
+      "4":{
+      "name":"Poochyena",
+      "type":"Siniestro",
+      "initial_level":"2",
+      "strong_vs":"Fantasma"
+      }
+    }
 }
