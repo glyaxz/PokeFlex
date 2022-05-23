@@ -65,11 +65,11 @@ function OpenModal(id) {
 	popupInfo.appendChild(closeBtn);
 
 	//  <div onclick="CloseModal()" class="CloseIcon">&#10006;</div>
-	element.style.display = 'block';
+	element.style.visibility = 'visible';
 }
 function CloseModal(id){
 	let element = document.getElementById('overlay');
-	element.style.display = 'none';
+	element.style.visibility = 'hidden';
 	let principalDiv = document.getElementById('pokeCards');
 	let btnid = document.getElementById(id);
 	principalDiv.appendChild(btnid);
