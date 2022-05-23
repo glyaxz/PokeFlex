@@ -21,7 +21,7 @@ loadGen(Gen,jsonResp)
 function loadGen(generation,json){
 	clearCards();
 	const pokedex = JSON.parse(json);
-
+	let div;
   	for (var i = 1; i < 5; i++) {
 		const myDiv = document.createElement('div');
 		const myPara1 = document.createElement('p');
@@ -45,25 +45,26 @@ function loadGen(generation,json){
 		myImg.src = '/img/'+pokedex['gen'+generation][i].name+'.png';
 		myImg.width = 50;
 
-		popup.appendChild(myDiv)
 		document.getElementById('pokeCards').appendChild(myDiv)
-
-		myDiv.addEventListener('click', () => {
-			popup.style.display = 'block';
-		});
-		 
-		close.addEventListener('click', () => {
-			popup.style.display = 'none';
-		});
-		 
-		popup.addEventListener('click', e => {
-			// console.log(e);
-			if(e.target.className === 'popup-wrapper') {
-				popup.style.display = 'none';
-			}
-		});
-
+		div=myDiv
 	}
+
+	popup.appendChild(myDiv)
+
+	myDiv.addEventListener('click', () => {
+		popup.style.display = 'block';
+	});
+	 
+	close.addEventListener('click', () => {
+		popup.style.display = 'none';
+	});
+	 
+	popup.addEventListener('click', e => {
+		// console.log(e);
+		if(e.target.className === 'popup-wrapper') {
+			popup.style.display = 'none';
+		}
+	});
 
 }
 
