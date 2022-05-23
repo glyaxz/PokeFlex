@@ -65,7 +65,7 @@ function OpenModal(id) {
 }
 function CloseModal(id){
 	let element = document.getElementById('overlay')
-	let principalDiv = document.getElementById('pokecard');
+	let principalDiv = document.getElementById('pokecards');
 	let btnid = document.getElementById(id);
 	principalDiv.appendChild(btnid)
 	element.style.display = 'none';
