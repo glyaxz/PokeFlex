@@ -69,14 +69,15 @@ function OpenModal(id) {
 	popupInfo.appendChild(btnid);
 	popupInfo.appendChild(closeBtn);
 	//  <div onclick="CloseModal()" class="CloseIcon">&#10006;</div>
-	element.style.display = 'block';
+	element.style.opacity = '100';
 }
 function CloseModal(id){
 	let element = document.getElementById('overlay');
 	let principalDiv = document.getElementById('pokeCards');
 	let btnid = document.getElementById(id);
+	btnid.className = 'pokecard-individual'
 	principalDiv.appendChild(btnid);
-	element.style.display = 'none';
+	element.style.opacity = '0';
 }
 
 function loadListeners(){
