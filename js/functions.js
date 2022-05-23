@@ -20,7 +20,7 @@ loadGen(Gen,jsonResp)
 
 function loadGen(generation,json){
 
-	const pokedex = $.parseJSON(json);
+	const pokedex = JSON.parse(json);
 
   	for (var i = 0; i < pokedex.length; i++) {
 		const myArticle = document.createElement('article');
