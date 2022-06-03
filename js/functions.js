@@ -49,9 +49,7 @@ function loadGen(generation,json){
 	}
 	loadListeners();
 }
-function clearCards(){
-	section.innerHTML = "";
-}
+
 
 // Pop Up
 function OpenModal(id) {
@@ -65,7 +63,7 @@ function OpenModal(id) {
 	closeBtn.addEventListener('click',function(){
 		let element = document.getElementById('overlay');
 		element.style.visibility = 'hidden';
-		popUpCleaner();
+		divCleaner('overlay');
 	});
 	popupInfo.appendChild(btnCloned);
 	popupInfo.appendChild(closeBtn);
@@ -84,8 +82,8 @@ function loadListeners(){
 	}
 }
 
-function popUpCleaner(){
-	popupInfo.innerHTML = ""
+function divCleaner(divToClean){
+	divToClean.innerHTML = ""
 }
 
 
