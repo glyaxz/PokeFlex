@@ -19,10 +19,11 @@ function setGen(setGen){
 loadGen(Gen,jsonResp)
 
 function loadGen(generation,json){
-	clearCards();
+	divCleaner(section)
 	const pokedex = JSON.parse(json);
+	
 	let div;
-  	for (var i = 1; i < 5; i++) {
+  	for (var i = 1; i < Object.keys(pokedex["gen"+generation]).length+1; i++) {
 		const myDiv = document.createElement('div');
 		const myPara1 = document.createElement('p');
 		const myImg = document.createElement('img');
@@ -45,28 +46,28 @@ function loadGen(generation,json){
 		myImg.src = '/img/'+pokedex['gen'+generation][i].name+'.png';
 		myImg.width = 50;
 		document.getElementById('pokeCards').appendChild(myDiv);
-		// myDiv.addEventListener('onclick', OpenModal(myDiv))
 	}
 	loadListeners();
 }
 
-
 // Pop Up
 function OpenModal(id) {
 	let element = document.getElementById('overlay');
-	let btnid=document.getElementById(id);
 	let closeBtn = document.createElement('button');
+	let btnid=document.getElementById(id);
 	let btnCloned = btnid.cloneNode(true);
-	closeBtn.textContent = 'Cerrar';
+	closeBtn.textContent = "X";
 	closeBtn.id = 'closeBtn'
+	closeBtn.className = "xBtn"
 	btnCloned.className = 'popupCard';
 	closeBtn.addEventListener('click',function(){
-		let element = document.getElementById('overlay');
-		element.style.visibility = 'hidden';
-		divCleaner('overlay');
+		let element2 = document.getElementById('overlay');
+		let element3 = document.getElementById('popupInfo');
+		element2.style.visibility = 'hidden';
+		divCleaner(element3);
 	});
-	popupInfo.appendChild(btnCloned);
 	popupInfo.appendChild(closeBtn);
+	popupInfo.appendChild(btnCloned);
 
 	//  <div onclick="CloseModal()" class="CloseIcon">&#10006;</div>
 	element.style.visibility = 'visible';

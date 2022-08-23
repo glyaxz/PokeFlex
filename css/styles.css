@@ -25,14 +25,15 @@
 }
 .pokecard-individual{
 	position: relative;
-	padding-left: 5%;
 	padding-top: 5%;
+	padding-bottom: 2%;
 	border: 2px;
 	border-color: black;
 	border-style: solid;
 	border-radius: 5%;
 	width: 90%;
 	block-size: auto;
+	text-align: center;
 }
 .pokecard-individual img{
 	justify-content: center;
@@ -49,7 +50,6 @@
 @media (min-width: 756px) {
 	.pokecard-individual{
 		width: 26%;
-		
 	}
 }
 .cabecera{
@@ -62,47 +62,56 @@
 .cabecera h1,h3{
 	font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 /* Popup */
 .overlay {
-	position: absolute;
+	position: fixed;
 	visibility: hidden;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
+	margin-top: -5%;
 	background: rgba(0, 0, 0, 0.8);
 	z-index: 2;
 }
 
 .popup {
 	position: absolute;
-	width: 50%;
-	height: 50%;
+	width: 55%;
+	height: 55%;
 	top: 25%;
 	left: 25%;
 	text-align: center;
 	background: white;
+	border: 999999 transparent;
+	border-radius: 7%;
 }
 .popupCard{
 	position: relative;
 	justify-content: center;
 	text-align: center;
 	padding: auto;
+	left: 5%;
 	width: 90%;
 }
 .popupCard img{
 	width: 100px;
 }
-.closeBtn{
-	bottom: 0;
-	text-align: center;
-	right: 50%;
-	left: 50%;
-	background-color: transparent;
-	border-radius: 0.7px;
+.xBtn{
+	position: relative;
+	left: 40%;
+	margin-top: 5%;
+	background-color: white;
+	border: transparent;
+	font-weight: bold;
 }
-.closeBtn:hover{
-	background-color: darkgrey;
+.xBtn:hover{
+	background-color: lightgray;
+	border: 9999999 transparent;
+	border-radius: 100%;
 }
 
+
 /* Hecho por Javier 'glyaxz' García Ruiz */
+

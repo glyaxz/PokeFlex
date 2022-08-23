@@ -1,77 +1,86 @@
-{"gen1":{
+{
+  "gen1":{
     "1":{
       "name":"Squirtle",
       "type":"Agua",
       "initial_level":"5",
       "strong_vs":"Fuego"
       },
-      "2":{
+    "2":{
       "name":"Charmander",
       "type":"Fuego",
       "initial_level":"5",
       "strong_vs":"Planta"
       },
-      "3":{
+    "3":{
       "name":"Bulbasaur",
       "type":"Planta",
       "initial_level":"5",
       "strong_vs":"Agua"
       },
-      "4":{
+    "4":{
       "name":"Pikachu",
       "type":"Electrico",
       "initial_level":"5",
       "strong_vs":"Agua"
+      },
+    "5":{
+      "name":"Caterpie",
+      "type":"Bicho",
+      "initial_level":"2",
+      "strong_vs":"Planta"
       }
-    },"gen2":{
+    },
+    "gen2":{
       "1":{
-      "name":"Totodile",
-      "type":"Agua",
-      "initial_level":"5",
-      "strong_vs":"Fuego"
+        "name":"Totodile",
+        "type":"Agua",
+        "initial_level":"5",
+        "strong_vs":"Fuego"
       },
       "2":{
-      "name":"Chikorita",
-      "type":"Planta",
-      "initial_level":"5",
-      "strong_vs":"Agua"
+        "name":"Chikorita",
+        "type":"Planta",
+        "initial_level":"5",
+        "strong_vs":"Agua"
       },
       "3":{
-      "name":"Cyndaquil",
-      "type":"Fuego",
-      "initial_level":"5",
-      "strong_vs":"Planta"
+        "name":"Cyndaquil",
+        "type":"Fuego",
+        "initial_level":"5",
+        "strong_vs":"Planta"
       },
       "4":{
-      "name":"Hoothoot",
-      "type":"Normal",
-      "initial_level":"2",
-      "strong_vs":"Nada"
+        "name":"Hoothoot",
+        "type":"Normal",
+        "initial_level":"2",
+        "strong_vs":"Nada"
       }
-    },"gen3":{
+    },
+    "gen3":{
       "1":{
-      "name":"Mudkip",
-      "type":"Agua",
-      "initial_level":"5",
-      "strong_vs":"Fuego"
+        "name":"Mudkip",
+        "type":"Agua",
+        "initial_level":"5",
+        "strong_vs":"Fuego"
       },
       "2":{
-      "name":"Treeko",
-      "type":"Planta",
-      "initial_level":"5",
-      "strong_vs":"Agua"
+        "name":"Treeko",
+        "type":"Planta",
+        "initial_level":"5",
+        "strong_vs":"Agua"
       },
       "3":{
-      "name":"Torchic",
-      "type":"Fuego",
-      "initial_level":"5",
-      "strong_vs":"Planta"
+        "name":"Torchic",
+        "type":"Fuego",
+        "initial_level":"5",
+        "strong_vs":"Planta"
       },
       "4":{
-      "name":"Poochyena",
-      "type":"Siniestro",
-      "initial_level":"2",
-      "strong_vs":"Fantasma"
+        "name":"Poochyena",
+        "type":"Siniestro",
+        "initial_level":"2",
+        "strong_vs":"Fantasma"
       }
     }
 }
